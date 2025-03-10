@@ -1,0 +1,159 @@
+body {
+    margin: 0 auto;
+    font-family: 'Tahoma', sans-serif;
+    color: rgb(62,44,109);
+
+}
+
+.container {
+    position: relative;
+}
+
+
+.image,
+.text {
+    position: absolute;
+}
+
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image img {
+    width: 1000px;
+
+}
+
+.text {
+    text-align: center;
+    width: 800px;
+    left: 100px;
+    top: 80px;
+}
+
+
+
+.q1 {
+    font-size: 16pt;
+
+}
+
+.q2 {
+    margin-top: 0px;
+    font-size: 16pt;  
+
+}
+.q2 p:nth-child(1) {
+    margin: 0;
+}
+.q2 p:nth-child(2){
+    margin-top: 0;
+}
+
+.q3 {
+    font-size: 14pt;
+
+}
+
+.q3 p{
+    margin: 0;
+}
+
+.q4 {
+    margin-top: -26px;
+    margin-bottom: 0px;
+
+    font-size: 50pt;
+}
+
+.q5 {
+    margin-top: -53px;
+    font-size: 16pt;
+
+}
+
+.q6 {
+    margin-top: 45px;
+}
+
+.q7 {
+    margin-top: 30px;
+}
+
+.q6, .q7{
+    font-size: 24pt;
+}
+
+.q8 {
+    margin-top: 72px;
+}
+
+.q9 {
+    margin-top: -10px;
+}
+
+.q10 {
+    margin-top: 20px;
+}
+
+.q8, .q9, .q10 {
+    font-size: 18pt;
+}
+
+.q11 {
+    position: absolute;
+    top: 918px;
+    width: 100%;
+    font-size: 16pt;
+    text-align: center;
+}
+
+.q11 p:nth-child(1),
+.q11 p:nth-child(3) {
+    padding-left: 300px;
+}
+
+.q11 p:nth-child(2) {
+    padding-right: 500px;
+}
+
+.q12 {
+    position: absolute;
+    top: 1125px;
+    width: 100%;
+    font-size: 16pt;
+}
+
+.q12 p {
+    margin: 0;
+}
+
+.podpis_pechat {
+    position: absolute;
+    top: 739px;
+}
+
+.podpis_pechat img{
+    position: absolute;
+}
+
+.podpis_pechat img:nth-child(1){
+    width: 221px;
+    top: 135px;
+    left: 432px;
+}
+
+.podpis_pechat img:nth-child(2){
+    width: 240px;
+    top: 158px;
+    left: 140px
+}
+
+.podpis_pechat img:nth-child(3){
+    width: 224px;
+    top: 229px;
+    left: 424px;
+    
+}

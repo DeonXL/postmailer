@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style_new.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="image">
+
+<!--            <img src="../../static/cert/new_fon.png" alt="">-->
+
+            <img src="data:image/png;base64,{{ img_fon }}">
+        </div>
+        <div class="text">
+            <div class="q1">
+                <p>Учредитель</p>
+            </div>
+            <div class="q2">
+
+                <p>Государственное учреждение </p>
+                <p>дополнительного профессионального образования </p>
+                <p>какой-нибуть области </p>
+                <p>Название</p>
+                <p>Учебного заведения</p>
+
+            </div>
+
+            <div class="q4">
+                <p>СЕРТИФИКАТ</p>
+            </div>
+
+            <div class="q6">
+                 {% if second_name == 'nan' %}
+                    <p>{{ surname }} {{ name }}</p>
+                {% else %}
+                    <p>{{ surname }} {{ name }} {{ second_name }} </p>
+                {% endif %}
+<!--                <p>фамилия имя отчество</p>-->
+            </div>
+
+            <div class="q8">
+                  <p>{{ date }} принял(а) участие в</p> 
+                 <p>{{ subject }}</p> 
+<!--            Пример
+                <p>15 марта 2023 года принял(а) участие в семинаре</p>
+                <p>Название семинара</p>
+-->
+
+
+            </div>
+            <div class="q11" style="margin-top: 60px">
+                <p>М.П.</p>
+                <p>Директор _______________ ФИО</p>
+
+            </div>
+            <div class="podpis_pechat" style="margin-top: 60px">
+<!--
+                <img src="/static/cert/%D0%9A%D1%83%D0%B4%D1%80%D1%8F%D0%B2%D1%86%D0%B5%D0%B2%D0%B0.png" alt="">
+                <img src="/static/cert/%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D1%8C.png" alt="">
+-->
+                <img src="data:image/png;base64,{{ img_director }}">
+                <img src="data:image/png;base64,{{ img_pechat }}">
+            </div>
+            <div class="q12">
+                <p>город </p>
+                <p>{{ date_in }} </p>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

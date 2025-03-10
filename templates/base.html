@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+{% block head %}
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="../static/css/bootstrap.css">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <!--
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+-->
+    </head>
+{% endblock %}
+<body>
+
+<main>
+    {% block content %}{% endblock %}
+</main>
+
+{% block footer %}
+<div class="fixed-bottom footer">
+    <div class="container">
+        <p>&copy; 2025</p>
+        <p><a href="mailto:dmi3i_76@bk.ru">dmi3i_76@bk.ru</a></p>
+    </div>
+</div>
+{% endblock %}
+</body>
+</html>

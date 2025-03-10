@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+        <div class="box_list">
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <p>Успешно отправленные перподавателю</p>
+                        {% for mail in ok_list_teach %}
+                        <li>{{ mail }}</li>
+                        {% endfor %}
+                        <hr>
+                        <p>Успешно отправленые студентам:</p>
+                        {% for mail in ok_list_stud %}
+                        <li>{{ mail }}</li>
+                        {% endfor %}
+
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <p>Завершились неудачно перподавателю:</p>
+                        {% for mail in err_list_teach %}
+                        <li>{{ mail }}</li>
+                        {% endfor %}
+                        <hr>
+                        <p>Завершились неудачно студентам:</p>
+                        {% for mail in err_list_stud %}
+                        <li>{{ mail }}</li>
+                        {% endfor %}
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+
+{% endblock %}

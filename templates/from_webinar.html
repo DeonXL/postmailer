@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="box">
+        <div class="box_form">
+            <form action="/courses" enctype="multipart/form-data" method="POST">
+                 <div class="mb-3">
+                    <label class="form-label"><h2>Рассылка для Вебинара</h2></label>
+                </div>
+                <div class="mb-3">
+                    <label for="subject_email" class="form-label">Введите тему письма (название курса)</label>
+                    <input name="subject_email" type="text" class="form-control" id="subject_email"
+                           placeholder="Введите тему письма (название курса)">
+                </div>
+                <!-- данные для педагогов -->
+                <div class="mb-3">
+                    <label for="link_teacher" class="form-label">Введите ссылку для педагога</label>
+                    <input name="link_teacher" type="text" class="form-control" id="link_teacher"
+                           placeholder="Введите ссылку для педагога">
+                </div>
+
+                <!-- данные на слушателей -->
+                <div class="mb-3">
+                    <label for="link_form" class="form-label">Введите ссылку на форму учета посещения или на материалы</label>
+                    <input name="link_form" type="text" class="form-control" id="link_form"
+                           placeholder="Введите ссылку на форму учета посещения">
+                </div>
+                <div class="mb-3">
+                    <label for="table_email" class="form-label">Прикрепите таблицу рассылки</label>
+                    <input name="table_email" class="form-control" type="file" id="table_email">
+                </div>
+                <button type="submit" class="btn btn-primary">Отправить</button>
+                <a href="{{ url_for('index') }}" class="btn btn-primary" role="button" aria-disabled="true">Назад</a>
+            </form>
+        </div>
+    </div>
+{% endblock %}

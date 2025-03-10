@@ -1,0 +1,139 @@
+/* @font-face {
+    font-family: 'Arial Narrow';
+    src: url('arialnarrow.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+body {
+    margin: 0 auto;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    color: rgb(62,44,109);
+}
+
+.container {
+    position: relative;
+}
+
+
+.image,
+.text {
+    position: absolute;
+}
+
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image img {
+    width: 1000px;
+}
+
+.text {
+    text-align: center;
+    width: 800px;
+    left: 100px;
+    top: 80px;
+}
+
+.q1 {
+    margin-top: -61px;
+    font-size: 21pt;
+}
+
+.q2 {
+    margin-top: -18px;
+    font-size: 20pt;  
+}
+.q2 p {
+    margin: 0;
+}
+
+.q3 {
+    margin-top: 32px;
+    font-size: 15pt;
+
+}
+
+.q3 p{
+    margin: 0;
+}
+
+.q4 {
+    margin-top: -39px;
+    font-size: 83pt;
+}
+
+.q6 {
+    margin-top: -26px;
+    font-size: 43pt;
+}
+
+.q8 {
+    margin-top: -11px;
+    font-size: 25pt;
+}
+
+.q8 p{
+    margin: 0;
+}
+
+.q11 {
+    position: absolute;
+    top: 891px;
+    width: 100%;
+    font-size: 22pt;
+    text-align: center;
+}
+.q11 p:nth-child(1){
+    float: left;    
+}
+
+.q11 p:nth-child(1){
+    padding-left: 73px;
+}
+
+.q11 p:nth-child(2) {
+    padding-left: 218px;
+}
+
+.q12 {
+    position: absolute;
+    top: 1147px;
+    width: 100%;
+    font-size: 22pt;
+}
+
+.q12 p {
+    margin: 0;
+}
+
+.podpis_pechat {
+    position: absolute;
+    top: 739px;
+}
+
+.podpis_pechat img{
+    position: absolute;
+}
+
+.podpis_pechat img:nth-child(1){
+    width: 221px;
+    top: 122px;
+    left: 340px;
+}
+
+.podpis_pechat img:nth-child(2){
+    width: 240px;
+    top: 71px;
+    left: 20px
+}
+
+.podpis_pechat img:nth-child(3){
+    width: 224px;
+    top: 229px;
+    left: 424px;
+    
+}
